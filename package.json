@@ -4,7 +4,8 @@
   "description": "Iroha library, typescript and fun.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc ./src/*.ts"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/laSinteZ/iroha-lib.js#readme",
   "dependencies": {
+    "@types/node": "^10.12.3",
     "buffer": "^5.2.1",
     "ed25519.js": "^1.3.0",
     "google-protobuf": "^3.6.1",
+    "grpc": "^1.16.0",
     "js-sha3": "^0.8.0"
   },
   "devDependencies": {
